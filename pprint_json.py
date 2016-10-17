@@ -19,3 +19,4 @@ if __name__ == '__main__':
     json_filepath = input("Введите путь до файла или сам файл,"
                           " если он находится в этой директории:\n")
     pretty_print_json(load_data(json_filepath))
+    
