@@ -2,12 +2,15 @@ import json
 
 
 def load_data(filepath):
-    pass
+    with open(filepath, 'r', encoding="UTF-8" ) as handle:
+        data = json.load(handle)
+        return data
 
 
 def pretty_print_json(data):
-    pass
+    print(json.dumps(data, indent=4, sort_keys=True, separators=(',', ':'), ensure_ascii=False))
 
 
 if __name__ == '__main__':
-    pass
+    data = input("введите путь до файла!n/")
+    pretty_print_json(load_data(data))
