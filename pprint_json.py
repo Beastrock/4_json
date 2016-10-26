@@ -3,7 +3,6 @@ import os.path
 import sys
 
 
-
 def load_data(filepath):
     if not os.path.exists(filepath):
         return None
@@ -18,6 +17,5 @@ def pretty_print_json(data):
 
 
 if __name__ == '__main__':
-    json_filepath = input("Введите путь до файла или сам файл,"
     json_filepath = sys.argv[1]
     pretty_print_json(load_data(json_filepath))
