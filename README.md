@@ -1,10 +1,7 @@
 # 4_json
+This script gets a json file and print it in a goodlooking file
 
-##about
-This script gets a json file and pretty print it. 
+##launching  
+To lunch the script print in console '''python json_4 <filepath to your json file>'''
 
-##launching
 
-## functions 
-load_from_json(filepath) - gets filepath and return file 
-pretty_print_json(data) - gets file and return it in pretty printed format
